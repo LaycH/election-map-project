@@ -22,7 +22,7 @@ var petOwner = {};  //new blank object created!*/
 
 };
 
-var catOwners1= createOwner ("Cat Owners");
+var catOwners1= createOwner ("Cat Owners");  /*subsitute "winner" with "mostly" and "winner name" for "Pet Owners"*/
 var dogOwners2 = createOwner ("Dog Owners");
 
 catOwners1.ownerResults = [5, 1, 7, 2, 33, 6, 4, 2, 1, 14, 8, 3, 1,

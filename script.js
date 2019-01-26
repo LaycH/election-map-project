@@ -22,7 +22,7 @@ var petOwner = {};  //new blank object created!*/
 
 };
 
-var catOwners1= createOwner ("Cat Owners");  /*subsitute "winner" with "mostly" and "winner name" for "Pet Owners"*/
+var catOwners1= createOwner ("Cat Owners");  
 var dogOwners2 = createOwner ("Dog Owners");
 
 catOwners1.ownerResults = [5, 1, 7, 2, 33, 6, 4, 2, 1, 14, 8, 3, 1,
@@ -47,4 +47,20 @@ dogOwners2.ownerResults = [4, 2, 4, 4, 22, 3, 3, 1, 2, 15, 8, 1, 3,
 
   console.log(catOwners1.totalPets);
   console.log(dogOwners2.totalPets);
+
+  /*subsitute "winner" with "mostly" and "winner name" for "Pet Owners"*/
+
+  var mostly = "???";
+
+if (catOwners1.totalPets > dogOwners2.totalPets) {
+  mostly = catOwners1; /*or this might need to be "petOwners.name" or something ?*/
+} else if (catOwners2.totalPets < dogOwners2.totalPets) {
+  mostly= dogOwners2;
+} else {
+  mostly = "Draw."
+}
+
+console.log("And This State Is..." + mostly + "!" );
+
+
 

@@ -47,6 +47,29 @@ dogOwners2.ownerResults = [4, 2, 4, 4, 22, 3, 3, 1, 2, 15, 8, 1, 3,
   catOwners1.ownerResutls[43] = 11;
   dogOwners2.ownerResults[43] = 27;
 
+var setStateResults = (state){
+
+  theStates[state].mostly =null;
+
+  if (catOwners1.ownerResults[state] > dogOwners2.ownerResults[state]){
+
+    theStates[state].winner = catOwners1; 
+
+  } else if (catOwners1.ownerResults[state] < dogOwners2.ownerResults[state]){
+
+    theStates[state].mostly =dogOwners1;
+
+  }
+var stateMostly = theStates[state].mostly;
+
+if (stateMostly !==null) {
+  theStates[state].rgbColor = stateMostly.animalColor;
+} else {
+    theStates[state].rgbColor = [11,32,57];
+}
+
+};
+
 //calling the method for each politician, add below the code that updates the electionResults arrays*/
   catOwners1.countTotalPets();
   dogOwners2.countTotalPets();
@@ -70,6 +93,4 @@ if (catOwners1.totalPets > dogOwners2.totalPets) {
 }
 
 console.log("And This State Is..." + mostly + "!" );
-
-
 

@@ -53,7 +53,7 @@ var setStateResults = (state){
 
   if (catOwners1.ownerResults[state] > dogOwners2.ownerResults[state]){
 
-    theStates[state].winner = catOwners1; 
+    theStates[state].mostly = catOwners1; 
 
   } else if (catOwners1.ownerResults[state] < dogOwners2.ownerResults[state]){
 
@@ -69,6 +69,21 @@ if (stateMostly !==null) {
 }
 
 };
+
+var stateInfoTable = document.getElementById('stateResuts');
+
+var header = stateInfoTable.children[0];
+var body= stateInfoTable.children[1];
+var stateName = header.children[0].children[0];
+var abbrev = header.children[0].children[1];
+var catOwners1Name = body.children[0].children[0];
+var dogOwners2Name = body.children[1].children[0];
+var catOwners1Results = body.children[0].children[1];
+car dogOwners2Results = body.children[1].children[1];
+var mostlyName = body.children[2].children[1];
+
+
+
 
 //calling the method for each politician, add below the code that updates the electionResults arrays*/
   catOwners1.countTotalPets();
@@ -103,3 +118,4 @@ row.children[1].innerText = catOwners1.totalPets;
 row.children[2].innerText = dogOwners2.name;
 row.children[3].innerText = dogOwners2.totalPets;
 row.children[5].innerText = mostly;
+

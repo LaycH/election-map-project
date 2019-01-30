@@ -61,7 +61,7 @@ var setStateResults = (state){
 
   }
 
-  stateName.innerText= the States[state].nameFull;
+  stateName.innerText= theStates[state].nameFull;
   abbrev.innerText = "(" +theStates[state].nameAbbrev + ")";
 
   catOwners1Name.innerText = catOwners1.name;

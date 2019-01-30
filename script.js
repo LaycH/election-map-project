@@ -94,3 +94,12 @@ if (catOwners1.totalPets > dogOwners2.totalPets) {
 
 console.log("And This State Is..." + mostly + "!" );
 
+var countryInfoTable = document.getElementById('countryResults');
+
+var countryInfoTable.children[0].children[0];
+
+row.children[0].innerText = catOwners1.name;
+row.children[1].innerText = catOwners1.totalPets;
+row.children[2].innerText = dogOwners2.name;
+row.children[3].innerText = dogOwners2.totalPets;
+row.children[5].innerText = mostly;

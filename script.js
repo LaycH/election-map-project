@@ -60,6 +60,22 @@ var setStateResults = (state){
     theStates[state].mostly =dogOwners1;
 
   }
+
+  stateName.innerText= the States[state].nameFull;
+  abbrev.innerText = "(" +theStates[state].nameAbbrev + ")";
+
+  catOwners1Name.innerText = catOwners1.name;
+  dogOwners2Name.innerText = dogOwners2.name;
+
+  catOwners1Results.innerText = catOwners1.ownerResults[state];
+  dogOwners2.Results.innerText = dogOwners2.ownerResults[state];
+
+  if (theStates[state].mostly ===null) {
+    mostlyName.innerText = "Draw";
+  } else {
+    mostlyName.innerText = theStates[state].mostly.name;
+  }
+  
 var stateMostly = theStates[state].mostly;
 
 if (stateMostly !==null) {

@@ -1,6 +1,5 @@
-let politician = {
-  name: '',
-  electionResults: null,
-  totalVotes: '0'
-};
+let politician = {};
+  politician.name = "";
+  politician.electionResults = null;
+  politician.totalVotes = 0;
 

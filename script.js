@@ -2,15 +2,17 @@
 
 function createPolitician (name) {
   
-  var politician = {};
-    politician.name = "";
-    politician.electionResults = null;
-    politician.totalVotes = 0;
-
+  let politician = {
+    name,
+    electionResults:null,
+    totalVotes: 0,
+  };
   return politician;
   
 }
 
-var politicianTwo = createPolitician("jane");
+const mrsRivers= createPolitician("Mrs.Rivers");
+const mrBloom= createPolitician("Mr.Bloom");
 
-console.log(createPolitician("jane"));
+console.log(mrsRivers);
+console.log(mrBloom);
